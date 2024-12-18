@@ -1,152 +1,211 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-body{
-    font-family: Arial, Helvetica, sans-serif;
-}
-header{
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  header {
     background-color: #333;
     color: white;
     padding: 10px 0;
-}
-header nav{
+  }
+  
+  header nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
-}
-header .logo h1{
+  }
+  
+  header .logo h1 {
     font-size: 24px;
-}
-header ul{
+  }
+  
+  header ul {
     list-style: none;
     display: flex;
-}
-header ul li{
+  }
+  
+  header ul li {
     margin-left: 20px;
-}
-header ul li a{
+  }
+  
+  header ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
-}
-.negocio{
-    background-color: #dcc0e1;
+  }
+  
+  .hero {
+    background-color: #007bff;
     color: white;
     text-align: center;
     padding: 80px 20px;
-}
-.negocio h1{
+  }
+  
+  .hero h1 {
     font-size: 48px;
-}
-.negocio p{
+  }
+  
+  .hero p {
     font-size: 20px;
     margin-top: 20px;
-}
-.negocio button{
+  }
+  
+  .hero button {
     padding: 10px 20px;
     font-size: 16px;
     margin-top: 30px;
-    background-color: rgb(166, 166, 229);
+    background-color: #ff5733;
     border: none;
     color: white;
     cursor: pointer;
-}
-.tempo{
-    text-align: center;
-    padding: 40px 20px;
-    background-color: #222;
-    color: white;
-}
-.tempo h2{
-    font-size: 35px;
-    margin-bottom: 20px;
-}
-.tempo-timer{
-    font-size: 28px;
-    font-weight: bold;
-}
-.benef{
+  }
+  
+  .hero button:hover {
+    background-color: #c13c1e;
+  }
+  
+  .benefits {
     text-align: center;
     padding: 60px 20px;
     background-color: #f4f4f4;
-}
-.benef h2{
+  }
+  
+  .benefits h2 {
     font-size: 36px;
     margin-bottom: 40px;
-}
-.benef-item{
+  }
+  
+  .benefit-item {
     margin-bottom: 20px;
-}
-.benef-item h3{
-    font-size: 20px;
-}
-.modais{
-    text-align: center;
-    padding: 60px 20px;
-    background-color: #f9f9f9;
-}
-.carousel{
-    display: flex;
-    justify-content: center;
-    overflow: hidden;
-}
-.modais-fadein{
-    display: none;
-    padding: 20px;
-    max-width: 400px;
-    text-align: center;
-}
-.modais-fadein p{
-    font-size: 16px;
-    color: #555;
-}
-.contato{
+  }
+  
+  .benefit-item h3 {
+    font-size: 24px;
+  }
+  
+  .contact-form {
     text-align: center;
     padding: 40px 20px;
-}
-.contato h2{
+  }
+  
+  .contact-form h2 {
     font-size: 36px;
     margin-bottom: 30px;
-}
-#formulario{
+  }
+  
+  .contact-form form {
     display: inline-block;
     max-width: 400px;
     width: 100%;
-}
-.contato input{
+  }
+  
+  .contact-form input {
     width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
     font-size: 16px;
-}
-.contato button{
+  }
+  
+  .contact-form button {
     width: 100%;
     padding: 10px;
-    background-color: green;
+    background-color: #28a745;
     border: none;
     color: white;
     font-size: 18px;
-}
-.scroll{
+  }
+  
+  .contact-form button:hover {
+    background-color: #218838;
+  }
+
+  /* Classe para a animação de fade-in */
+.fade-in {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+  }
+  
+  .fade-in.visible {
+    opacity: 1;
+  }
+  .countdown {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #222;
+    color: white;
+  }
+  
+  .countdown h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  #countdown-timer {
+    font-size: 28px;
+    font-weight: bold;
+  }
+  .testimonials {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .carousel {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+  }
+  
+  .testimonial {
+    display: none;
+    padding: 20px;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .testimonial p {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .testimonial strong {
+    font-size: 16px;
+    color: #555;
+  }
+
+  /* Estilo para o botão de rolar para o topo */
+.scroll-to-top-btn {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: aquamarine;
+    background-color: #007bff;
     color: white;
     border: none;
     padding: 10px 20px;
     font-size: 16px;
     border-radius: 5px;
     cursor: pointer;
-    display: none;
-}
-footer{
+    display: none; /* Inicialmente escondido */
+    z-index: 1000;
+  }
+  
+  .scroll-to-top-btn:hover {
+    background-color: #0056b3;
+  }
+  
+  
+  footer {
     background-color: #333;
     color: white;
     text-align: center;
     padding: 20px;
-}
+  }
+  

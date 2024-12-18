@@ -3,77 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
   <title>Landing Page Profissional</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
   <header>
     <nav>
       <div class="logo">
         <h1>Minha Empresa</h1>
       </div>
       <ul>
-        <li><a href="#beneficios">Benefícios</a></li>
+        <li><a href="#benefits">Benefícios</a></li>
         <li><a href="#contact">Contato</a></li>
       </ul>
     </nav>
   </header>
-  <div class="negocio">
-    <h1>Transforme o seu negócio Agora</h1>
-    <p>Oferecemos soluções inovadoras para empresas que buscam crescimento rápido e sustentável</p>
-    <button>Saiba Mais</button>
-  </div>
-  <div class="tempo">
-    <h2>promoção por tempo limitado!</h2>
-    <p>Aproveite as vantagens agora</p>
-    <div class="tempo-timer">
-      <p id="tempo"></p>
+
+  <section class="hero">
+    <h1>Transforme Seu Negócio Agora</h1>
+    <p>Oferecemos soluções inovadoras para empresas que buscam crescimento rápido e sustentável.</p>
+    <button onclick="scrollToForm()">Saiba Mais</button>
+  </section>
+
+  <section class="countdown">
+    <h2>Promoção por tempo limitado!</h2>
+    <p>Aproveite as vantagens agora!</p>
+    <div id="countdown-timer">
+      <p id="countdown"></p>
     </div>
-  </div>
-  <div id="benef" class="benef">
+  </section>
+  
+
+  <section id="benefits" class="benefits">
     <h2>Benefícios</h2>
-    <div class="benef-item">
-      <h3>Suporte</h3>
+    <div class="benefit-item">
+      <h3>Suporte 24/7</h3>
       <p>Estamos sempre disponíveis para te ajudar em qualquer momento.</p>
     </div>
-    <div class="benef-item">
+    <div class="benefit-item">
       <h3>Resultados Rápidos</h3>
       <p>Com nossas soluções, você verá resultados em pouco tempo.</p>
     </div>
-    <div class="benef-item">
+    <div class="benefit-item">
       <h3>Preços Competitivos</h3>
       <p>Oferecemos os melhores preços do mercado com a melhor qualidade.</p>
     </div>
-  </div>
-  <div class="modais">
+  </section>
+
+  <section class="testimonials">
     <h2>O que dizem nossos clientes</h2>
     <div class="carousel">
-      <div class="modais-fadein">
+      <div class="testimonial fade-in">
         <p>"Ótima experiência! Melhor serviço que já utilizei."</p>
-        <p><strong>Boninho</strong></p>
+        <p><strong>Maria Silva</strong></p>
       </div>
-      <div class="modais-fadein">
-        <p>"Resultados incríveis em tempo recorde. Super recomendo!."</p>
-        <p><strong>Louro José</strong></p>
+      <div class="testimonial fade-in">
+        <p>"Resultados incríveis em tempo recorde. Super recomendo!"</p>
+        <p><strong>João Oliveira</strong></p>
       </div>
-      <div class="modais-fadein">
+      <div class="testimonial fade-in">
         <p>"Serviço de qualidade e com um atendimento impecável."</p>
-        <p><strong>Maria Braga</strong></p>
+        <p><strong>Ana Costa</strong></p>
       </div>
     </div>
-  </div>
-  <div id="contato" class="contato">
+  </section>
+  
+
+  <section id="contact" class="contact-form">
     <h2>Entre em Contato</h2>
-    <form id="formulario">
-      <input type="text" id="email" placeholder="Digite o seu e-mail" required>
+    <form id="emailForm">
+      <input type="email" id="email" placeholder="Digite seu e-mail" required>
       <button type="submit">Enviar</button>
     </form>
-  </div>
-    <button id="scroll" class="scroll">Voltar ao topo</button>
-    <footer>
-      <p>&copy; 2024 Minha Empresa. Todos os direitos reservados.</p>
-    </footer>
+  </section>
 
-    <script src="script.js"></script>
+  <button id="scrollToTopBtn" class="scroll-to-top-btn">Voltar ao topo</button>
+
+
+  <footer>
+    <p>&copy; 2024 Minha Empresa. Todos os direitos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
